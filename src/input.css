@@ -7,3 +7,42 @@ body {
     background-color: #0048ba;
     color: #fff; 
 }
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;  
+}
+ 
+.images img {
+    height: 50px; 
+    width: auto;
+}
+ 
+.nav-list ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 20px;  
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #2d3748;  
+    border-radius: 5px;
+}
