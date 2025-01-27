@@ -99,29 +99,26 @@ body {
 }
 form {
     display: flex;
-      /* Add spacing between the input and the button */
-    margin-top: 20px; /* Space above the form */
-}
-
-form input[type="text"] {
+    background-color: #fff; /* Set background color to white */
+    border-radius: 20px; /* Round the corners of the form */
+    overflow: hidden; /* Hide any content that overflows the form */
+    margin-top: 20px;
+    margin-right: 400px;
+  }
+  
+  form input[type="text"] {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    flex: 1; /* Makes the input expand to fill available space */
-}
-
-form button {
-    background-color: #ff4757;
-    color: white;
+    border: none; /* Remove the input border */
+    outline: none; /* Remove the focus outline */
+    flex: 1;
+    background-color: transparent; /* Make the input background transparent */
+  }
+  
+  form button {
+    background-color: #ff6347; 
+    color: #fff;
     border: none;
-    padding: 10px 50px;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-right: 6cm;
-}
-
-form button:hover {
-    background-color: #e63946; /* Slightly darker red on hover */
-}
+    border-radius: 0 20px 20px 0; /* Round only the right side of the button */
+  }
