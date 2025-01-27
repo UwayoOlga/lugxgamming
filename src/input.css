@@ -53,7 +53,25 @@ body {
     color: white;
     border-radius: 10px;  
 }
-
+.price {
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 33px;
+    height: 20px;
+    font-weight: bold; 
+}
+.hero-image {
+   
+    border-radius: 10px; 
+      
+  }
+   
+  
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -78,13 +96,20 @@ body {
     justify-content: space-around;
     padding: 20px;
     background: white;
-    border-radius: 10px;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-}
-
-.features .feature {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature {
     text-align: center;
-}
+  }
+  
+  .feature img {
+    display: block; /* This is the key change */
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; 
+  }
 
 .games {
     padding: 20px;
@@ -122,3 +147,4 @@ form {
     cursor: pointer;
     border-radius: 0 20px 20px 0; /* Round only the right side of the button */
   }
+  
