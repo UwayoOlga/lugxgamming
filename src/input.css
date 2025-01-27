@@ -1,119 +1,127 @@
 @tailwind base;     
 @tailwind components;  
 @tailwind utilities;   
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 10px; /* Added small white space around the page */
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Optional: Light background for a subtle contrast */
 }
 
-.hero {
-    background-image: url('/images/images/banner-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    position: relative;
-    height: 100vh;
-}
-
-.hero .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.hero .logo img {
-    width: 50px;
-}
-
-.navbar {
+.header {
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px; /* Optional: Rounds the edges for a polished look */
 }
 
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
+.header .logo {
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-.navbar .sign-in {
-    background-color: red;
-    padding: 10px 20px;
-    border-radius: 5px;
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin: 20px 0;
-}
-
-.hero h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-}
-
-.hero .search {
-    margin-top: 20px;
-}
-
-.hero input {
-    padding: 10px;
-    width: 300px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    background-color: red;
+.header .nav ul li a {
+    text-decoration: none;
     color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
 }
 
-.card {
-    background: white;
-    color: black;
-    width: 300px;
+.header .nav ul li .btn-signin {
+    background-color: #ff4757;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;  
+    background: url('/images/images/banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;  
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    color: #ff4757;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    background: white;
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.features .feature {
     text-align: center;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
+.games {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
 }
 
-.card .price {
-    font-size: 1.5rem;
-    color: #22a;
-    margin: 10px 0;
+.games .game-cards {
+    display: flex;
+    justify-content: space-around;
+}
+form {
+    display: flex;
+    gap: 50px; /* Add spacing between the input and the button */
+    margin-top: 20px; /* Space above the form */
 }
 
-.card .discount {
-    font-size: 1rem;
-    color: red;
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* Makes the input expand to fill available space */
+}
+
+form button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 3cm;
+}
+
+form button:hover {
+    background-color: #e63946; /* Slightly darker red on hover */
 }
