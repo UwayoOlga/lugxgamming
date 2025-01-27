@@ -99,7 +99,7 @@ body {
 }
 form {
     display: flex;
-    gap: 50px; /* Add spacing between the input and the button */
+      /* Add spacing between the input and the button */
     margin-top: 20px; /* Space above the form */
 }
 
@@ -119,7 +119,7 @@ form button {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 3cm;
+    margin-right: 6cm;
 }
 
 form button:hover {
