@@ -18,6 +18,7 @@ body {
     background-color: #007bff;
     color: #fff;
     border-radius: 10px;  
+    position: fixed; 
 }
 
 .header .logo {
@@ -29,6 +30,7 @@ body {
     list-style: none;
     display: flex;
     gap: 15px;
+    
 }
 
 .header .nav ul li a {
@@ -219,15 +221,23 @@ form {
   
   }
 
-
+  #top-games h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 
 
 .game-cards2 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 400px;
+    
   }
-  
+  #top-games h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    
+  }
   .game-card2 {
     width: 220px;
     margin-bottom: 30px;
@@ -257,7 +267,7 @@ form {
   }
   
   .explore {
-    background-color: #007bff;
+    background-color: #ff4757;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -270,7 +280,7 @@ form {
   }
   
   .view-all {
-    background-color: #007bff;
+    background-color: #ff4757;
     color: #fff;
     border: none;
     padding: 10px 20px;
