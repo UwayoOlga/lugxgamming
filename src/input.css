@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 10px;  
     box-sizing: border-box;
-    background-color: #f9f9f9;  
+    background-color: white;  
 }
 
 .header {
@@ -130,6 +130,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
   }
   
   .game-card {
@@ -138,6 +139,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+    background-color: #ddd;
   }
   
   .game-card img {
@@ -164,7 +166,7 @@ body {
   }
   
   .add-to-cart {
-    background-color: #007bff;
+    background-color: #ff4757;
     color: #fff;
     border: none;
     padding: 8px 15px;
@@ -174,7 +176,8 @@ body {
   }
   
   .view-all {
-    background-color: #007bff;
+    float: right;
+    background-color: #ff4757;
     color: #fff;
     border: none;
     padding: 10px 20px;
