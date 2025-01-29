@@ -91,26 +91,25 @@ body {
     font-size: 1.2em;
 }
 
-.features {
+.icon-container {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Adjust margin as needed */
   }
   
-  .feature {
+  .icon {
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #007bff; /* Light gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
-  .feature img {
-    display: block; /* This is the key change */
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px; 
+  .icon img {
+    width: 50px; /* Adjust icon size as needed */
+    height: 50px;
+    margin-bottom: 10px;
   }
-
 .games {
     padding: 20px;
     background: #f4f4f4;
