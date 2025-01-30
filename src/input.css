@@ -147,6 +147,7 @@ body {
   .game-card img {
     width: 100%;
     height: 200px;
+    border-radius: 20px;
     object-fit: cover;
   }
   
@@ -242,15 +243,18 @@ form {
     width: 220px;
     margin-bottom: 30px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;  
+    background-color: #fff;
   }
   
-  .game-card img {
+  .game-card2 img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
+    
   }
   
   .game-info {
@@ -271,7 +275,7 @@ form {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 20px;
     cursor: pointer;
     position: absolute;  
     bottom: 10px;  
@@ -284,7 +288,7 @@ form {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     margin-top: 20px;
   }
