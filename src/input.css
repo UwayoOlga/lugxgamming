@@ -333,5 +333,115 @@ form {
     font-weight: bold;
     order: 1;
 }
-
  
+.product-sections {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.product-section {
+  background-color: white;
+  border-radius: 15px;  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+  padding: 30px;  
+  flex: 1;  
+  display: flex;
+  flex-direction: column;  
+  position: relative;  
+}
+
+.section-content {  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+}
+
+.product-section h3 {
+  color: #777; 
+  font-size: 16px;
+  margin: 0;  
+}
+
+.product-section h2 {
+  color: #333;  
+  font-size: 24px;
+  margin: 0;
+}
+
+.product-section p {
+  color: #666; 
+  font-size: 14px;
+  line-height: 1.6; 
+  margin: 0;
+}
+
+.product-section button {
+  background-color: #ff6f61;  
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;  
+   
+}
+
+.product-section button:hover {
+  background-color: #e05f52;  
+}
+
+.image-section {
+  overflow: hidden;  
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  border-radius: 15px;  
+  display: block; 
+}
+
+.product-section input[type="email"] {
+  width: calc(100% - 20px);  
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+footer {
+  background-color: white;
+  color: #fff;  
+  padding: 20px 0; 
+  text-align: center; 
+  font-size: 14px; 
+}
+
+.footer-content {
+  width: 100%;  
+  margin: 0 auto;  
+  position: relative; 
+  
+}
+
+.blue-image {
+  border-radius: 50px;
+  position: absolute;  
+  left: 0;  
+  top: 0; 
+  width: 100%;  
+  height: 200px;  
+  z-index: 0; 
+}
+
+.footer-content p {
+  position: relative;  
+  z-index: 1; 
+  padding: 20px;  
+  margin: 0; 
+}
