@@ -242,7 +242,7 @@ form {
   .game-card2 {
     width: 220px;
     margin-bottom: 30px;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 20px;
     overflow: hidden;
     position: relative;  
@@ -292,3 +292,46 @@ form {
     cursor: pointer;
     margin-top: 20px;
   }
+ 
+ 
+.categories h2 {
+    color: #201b1b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    gap: 20px;  
+    justify-content: center;  
+    flex-wrap: wrap; 
+  }
+
+.category-item {
+    background-color: #007bff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    
+}
+
+.category-item img {
+    
+    width: 150px;  
+    height: 100px;
+    order: 2;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;  
+    order: 2;
+}
+
+.category-item p {
+    margin: 5px 0;
+    color: white;
+    font-weight: bold;
+    order: 1;
+}
+
+ 
