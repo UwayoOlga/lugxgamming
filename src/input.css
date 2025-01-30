@@ -19,12 +19,15 @@ body {
     color: #fff;
     border-radius: 10px;  
     position: fixed; 
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
 .header .logo {
     font-size: 1.5em;
     font-weight: bold;
 }
+ 
 
 .header .nav ul {
     list-style: none;
@@ -349,7 +352,7 @@ form {
   flex: 1;  
   display: flex;
   flex-direction: column;  
-  position: relative;  
+  position: static;  
   z-index: 1;
   
 }
