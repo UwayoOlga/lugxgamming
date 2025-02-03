@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LUGX Gaming</title>
+  <title>LUGX Gaming Clone</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900">
@@ -12,12 +12,13 @@
     <div class="logo">
       <img src="images/images/logo.png" alt="LUGX Logo" class="w-32" />
     </div>
-    <nav>
+    <nav id="myNavbar" >
+      
       <ul class="flex space-x-6">
-        <li><a href="#" class="hover:text-blue-400">Home</a></li>
-        <li><a href="#" class="hover:text-blue-400">Our Shop</a></li>
-        <li><a href="#" class="hover:text-blue-400">Product Details</a></li>
-        <li><a href="#" class="hover:text-blue-400">Contact Us</a></li>
+        <li><a href="#" class="px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Home</a></li>
+        <li><a href="#" class="px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Our Shop</a></li>
+        <li><a href="#" class="px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Product Details</a></li>
+        <li><a href="#" class= "px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Contact Us</a></li>
         <li>
           <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Sign In</a>
         </li>
@@ -288,6 +289,18 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const navbar = document.getElementById('myNavbar');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navbar.classList.remove('bg-transparent');
+        navbar.classList.add('bg-blue-500'); // Or your desired color
+      } else {
+        navbar.classList.remove('bg-blue-500');
+        navbar.classList.add('bg-transparent');
+      }
+    });
+  </script>
 </body>
 </html>
