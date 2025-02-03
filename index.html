@@ -1,218 +1,293 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lugx gaming</title>
-    <link rel="stylesheet" href="src/input.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUGX Gaming</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <script src="script.js"></script>
-    <header class="header">
-        <div class="logo">
-            <img src="images/images/logo.png" alt="LUGX Logo">
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Shop</a></li>
-                <li><a href="#">Product Details</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#" class="btn-signin">Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to LUGX</h1>
-            <h2>Best Gaming Site Ever!</h2>
-            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
-            <form>
-                <input type="text" placeholder="Type Something">
-                <button type="submit">Search Now</button>
-            </form>
-        </div>
-        <div class="hero-image">
-            <img src="images/images/banner-image.jpg" style="border-radius: 10px;" id="imagebg"> 
-            <div class="discount-tag">-40%</div>
-            <div class="price">$22</div>
-        </div>
-    </section>
-    <section class="features">
-        <div class="icon-container">
-            <div class="icon">
-              <img src="images/images/featured-01.png" alt="Cloud Icon">
-              <p>FREE STORAGE</p>
-            </div>
-            <div class="icon">
-              <img src="images/images/featured-02.png" alt="User Icon">
-              <p>USER MORE</p>
-            </div>
-            <div class="icon">
-              <img src="images/images/featured-03.png" alt="Reply Icon">
-              <p>REPLY READY</p>
-            </div>
-            <div class="icon">
-              <img src="images/images/featured-04.png" alt="Layout Icon">
-              <p>EASY LAYOUT</p>
-            </div>
-          </div>
-    </section>
-    
-  <section id="trending-games">
-    <h3>Trending Games</h3>
-    <button class="view-all">VIEW ALL</button>
-    <div class="game-cards">
-      <div class="game-card">
-        <img src="images/images/trending-01.jpg" alt="Game 1">
-        <div class="game-info">
-          <p>Action</p>
-          <h4>Assassin Creed</h4>
-          <span>$20</span>
-          <button class="add-to-cart">+</button>
-        </div>
-      </div>
-      <div class="game-card">
-        <img src="images/images/trending-02.jpg" alt="Game 2">
-        <div class="game-info">
-          <p>Action</p>
-          <h4>Assassin Creed</h4>
-          <span>$44</span>
-          <button class="add-to-cart">+</button>
-        </div>
-      </div>
-      <div class="game-card">
-        <img src="images/images/trending-03.jpg" alt="Game 3">
-        <div class="game-info">
-          <p>Action</p>
-          <h4>Assassin Creed</h4>
-          <span>$64</span>
-          <button class="add-to-cart">+</button>
-        </div>
-      </div>
-      <div class="game-card">
-        <img src="images/images/trending-04.jpg" alt="Game 4">
-        <div class="game-info">
-          <p>Action</p>
-          <h4>Assassin Creed</h4>
-          <span>$32</span>
-          <button class="add-to-cart">+</button>
-        </div>
-      </div>
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-transparent transition-all duration-300">
+    <div class="logo">
+      <img src="images/images/logo.png" alt="LUGX Logo" class="w-32" />
     </div>
-    
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#" class="hover:text-blue-400">Our Shop</a></li>
+        <li><a href="#" class="hover:text-blue-400">Product Details</a></li>
+        <li><a href="#" class="hover:text-blue-400">Contact Us</a></li>
+        <li>
+          <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="pt-24 md:pt-32 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between bg-cover bg-center rounded-lg"
+    style="background-image: url('images/images/banner-bg.jpg');"
+  >
+    <div class="hero-content max-w-xl text-white space-y-6">
+      <h1 class="text-4xl md:text-5xl font-bold">Welcome to LUGX</h1>
+      <h2 class="text-2xl md:text-3xl text-red-400 font-semibold">Best Gaming Site Ever!</h2>
+      <p class="text-lg md:text-xl">
+        LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
+      </p>
+      <form class="flex bg-white rounded-full overflow-hidden max-w-md">
+        <input
+          type="text"
+          placeholder="Type Something"
+          class="flex-1 px-4 py-2 text-gray-900 outline-none"
+        />
+        <button type="submit" class="bg-red-500 text-white px-6 py-2 hover:bg-red-600">
+          Search Now
+        </button>
+      </form>
+    </div>
+    <div class="hero-image relative mt-10 md:mt-0">
+      <img src="images/images/banner-image.jpg" alt="Banner Image" class="rounded-lg shadow-lg w-full max-w-md" />
+      <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">-40%</div>
+      <div class="absolute bottom-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">$22</div>
+    </div>
   </section>
 
-  <section id="top-games">
-    <h3 >TOP GAMES</h3>
-    <button class="view-all">VIEW ALL</button>
-    <h2>Most Played</h2>
-    <div class="game-cards2">
-      <div class="game-card2">
-        <img src="images/images/top-game-01.jpg" alt="Warframe">
-        <div class="game-info">
-          <p>Adventure</p>
-          <h3>Assassin Creed</h3>
-          <button class="explore">EXPLORE</button>
-        </div>
+  <!-- Features Section -->
+  <section class="features py-12 bg-gray-50">
+    <div class="container mx-auto flex flex-wrap justify-around items-center gap-8 px-6">
+      <div class="icon flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow">
+        <img src="images/images/featured-01.png" alt="Cloud Icon" class="w-16 h-16 bg-blue-500 p-3 rounded-full" />
+        <p class="font-bold text-gray-700">FREE STORAGE</p>
       </div>
-      <div class="game-card2">
-        <img src="images/images/top-game-02.jpg" alt="PUBG">
-        <div class="game-info">
-          <p>Adventure</p>
-          <h3>Assassin Creed</h3>
-          <button class="explore">EXPLORE</button>
-        </div>
+      <div class="icon flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow">
+        <img src="images/images/featured-02.png" alt="User Icon" class="w-16 h-16 bg-blue-500 p-3 rounded-full" />
+        <p class="font-bold text-gray-700">USER MORE</p>
       </div>
-      <div class="game-card2">
-        <img src="images/images/top-game-03.jpg" alt="Apex Legends">
-        <div class="game-info">
-          <p>Adventure</p>
-          <h3>Assassin Creed</h3>
-          <button class="explore">EXPLORE</button>
-        </div>
+      <div class="icon flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow">
+        <img src="images/images/featured-03.png" alt="Reply Icon" class="w-16 h-16 bg-blue-500 p-3 rounded-full" />
+        <p class="font-bold text-gray-700">REPLY READY</p>
       </div>
-      <div class="game-card2">
-        <img src="images/images/top-game-04.jpg" alt="The Sims 4">
-        <div class="game-info">
-          <p>Adventure</p>
-          <h3>Assassin Creed</h3>
-          <button class="explore">EXPLORE</button>
-        </div>
+      <div class="icon flex flex-col items-center space-y-2 p-4 bg-white rounded-lg shadow">
+        <img src="images/images/featured-04.png" alt="Layout Icon" class="w-16 h-16 bg-blue-500 p-3 rounded-full" />
+        <p class="font-bold text-gray-700">EASY LAYOUT</p>
       </div>
-      <div class="game-card2">
-        <img src="images/images/top-game-05.jpg" alt="Lost Ark">
-        <div class="game-info">
-          <p>Adventure</p>
-          <h3>Assassin Creed</h3>
-          <button class="explore">EXPLORE</button>
-        </div>
+    </div>
+  </section>
+
+  <!-- Trending Games Section -->
+  <section id="trending-games" class="py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-3xl font-bold">Trending Games</h3>
+        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">VIEW ALL</button>
       </div>
-      <div class="game-card2">
-        <img src="images/images/top-game-06.jpg" alt="Destiny 2">
-        <div class="game-info">
-          <p>Adventure</p>
-          <h3>Assassin Creed</h3>
-          <button class="explore">EXPLORE</button>
+      <div class="game-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Game Card -->
+        <div class="game-card bg-gray-200 rounded-xl overflow-hidden shadow">
+          <img src="images/images/trending-01.jpg" alt="Game 1" class="w-full h-48 object-cover" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Action</p>
+            <h4 class="font-bold text-lg">Assassin Creed</h4>
+            <div class="flex items-center justify-between mt-2">
+              <span class="font-bold text-xl">$20</span>
+              <button class="bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game Card -->
+        <div class="game-card bg-gray-200 rounded-xl overflow-hidden shadow">
+          <img src="images/images/trending-02.jpg" alt="Game 2" class="w-full h-48 object-cover" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Action</p>
+            <h4 class="font-bold text-lg">Assassin Creed</h4>
+            <div class="flex items-center justify-between mt-2">
+              <span class="font-bold text-xl">$44</span>
+              <button class="bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game Card -->
+        <div class="game-card bg-gray-200 rounded-xl overflow-hidden shadow">
+          <img src="images/images/trending-03.jpg" alt="Game 3" class="w-full h-48 object-cover" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Action</p>
+            <h4 class="font-bold text-lg">Assassin Creed</h4>
+            <div class="flex items-center justify-between mt-2">
+              <span class="font-bold text-xl">$64</span>
+              <button class="bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- Game Card -->
+        <div class="game-card bg-gray-200 rounded-xl overflow-hidden shadow">
+          <img src="images/images/trending-04.jpg" alt="Game 4" class="w-full h-48 object-cover" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Action</p>
+            <h4 class="font-bold text-lg">Assassin Creed</h4>
+            <div class="flex items-center justify-between mt-2">
+              <span class="font-bold text-xl">$32</span>
+              <button class="bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600">+</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="categories">
-    <h2>Top Categories</h2>
-    <div class="category-list">
-        <div class="category-item">
-            <img src="images/images/categories-01.jpg" alt="Brawlhalla">
-            <p>BRAWLHALLA</p>
+
+  <!-- Top Games Section -->
+  <section id="top-games" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-3xl font-bold">TOP GAMES</h3>
+        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">VIEW ALL</button>
+      </div>
+      <h2 class="text-2xl font-semibold mb-6 text-center">Most Played</h2>
+      <div class="game-cards2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <!-- Game Card 2 -->
+        <div class="game-card2 bg-white rounded-xl overflow-hidden shadow relative">
+          <img src="images/images/top-game-01.jpg" alt="Warframe" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Adventure</p>
+            <h3 class="font-bold text-lg">Assassin Creed</h3>
+          </div>
+          <button class="explore absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            EXPLORE
+          </button>
         </div>
-        <div class="category-item">
-            <img src="images/images/categories-03.jpg" alt="Warframe Veilbreaker">
-            <p>WARFRAME</p>
-            <p>VEILBREAKER</p>
+        <div class="game-card2 bg-white rounded-xl overflow-hidden shadow relative">
+          <img src="images/images/top-game-02.jpg" alt="PUBG" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Adventure</p>
+            <h3 class="font-bold text-lg">Assassin Creed</h3>
+          </div>
+          <button class="explore absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            EXPLORE
+          </button>
         </div>
-        <div class="category-item">
-            <img src="images/images/categories-04.jpg" alt="Tower Fantasy">
-            <p>Tower Fantasy</p>
+        <div class="game-card2 bg-white rounded-xl overflow-hidden shadow relative">
+          <img src="images/images/top-game-03.jpg" alt="Apex Legends" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Adventure</p>
+            <h3 class="font-bold text-lg">Assassin Creed</h3>
+          </div>
+          <button class="explore absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            EXPLORE
+          </button>
         </div>
-        <div class="category-item">
-            <img src="images/images/categories-05.jpg" alt="Super People">
-            <p>SUPER PEOPLE</p>
+        <div class="game-card2 bg-white rounded-xl overflow-hidden shadow relative">
+          <img src="images/images/top-game-04.jpg" alt="The Sims 4" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Adventure</p>
+            <h3 class="font-bold text-lg">Assassin Creed</h3>
+          </div>
+          <button class="explore absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            EXPLORE
+          </button>
         </div>
-        <div class="category-item">
-            <img src="images/images/categories-03.jpg" alt="Warframe">
-            <p>WARFRAME</p>
+        <div class="game-card2 bg-white rounded-xl overflow-hidden shadow relative">
+          <img src="images/images/top-game-05.jpg" alt="Lost Ark" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Adventure</p>
+            <h3 class="font-bold text-lg">Assassin Creed</h3>
+          </div>
+          <button class="explore absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            EXPLORE
+          </button>
         </div>
-    </div>
-</section>
- <section class="lastsection">
-    <div class="product-sections">
-        <div class="product-section">
-            <div class="section-content">
-                <h3>OUR SHOP</h3>
-                <h2>Go Pre-Order Buy & Get Best Prices For You!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button>SHOP NOW</button>
-            </div>
+        <div class="game-card2 bg-white rounded-xl overflow-hidden shadow relative">
+          <img src="images/images/top-game-06.jpg" alt="Destiny 2" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="game-info p-4">
+            <p class="text-gray-600">Adventure</p>
+            <h3 class="font-bold text-lg">Assassin Creed</h3>
+          </div>
+          <button class="explore absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+            EXPLORE
+          </button>
         </div>
-        <div class="product-section image-section">
-            <img src="images/images/top-game-02.jpg" alt="Product Image">
-        </div>
-        <div class="product-section">
-            <div class="section-content">
-                <h3>NEWSLETTER</h3>
-                <h2>Get Up To $100 Off Just Buy Subscribe Newsletter!</h2> 
-                <input type="email" placeholder="Your Email...">
-                <button>SUBSCRIBE NOW</button>
-            </div>
-        </div>
+      </div>
     </div>
   </section>
-  <footer>
-    <div class="footer-content">
-        <img src="images/images/footer-bg.jpg" alt="Blue Section" class="blue-image">
-        <p>&copy; Copyright 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo</p>
+
+  <!-- Categories Section -->
+  <section class="categories py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Top Categories</h2>
+      <div class="category-list flex flex-wrap justify-center gap-6">
+        <div class="category-item bg-blue-500 rounded-2xl p-4 flex flex-col items-center shadow-lg">
+          <img src="images/images/categories-01.jpg" alt="Brawlhalla" class="w-36 h-24 object-cover rounded-2xl mb-2" />
+          <p class="text-white font-bold">BRAWLHALLA</p>
+        </div>
+        <div class="category-item bg-blue-500 rounded-2xl p-4 flex flex-col items-center shadow-lg">
+          <img src="images/images/categories-03.jpg" alt="Warframe Veilbreaker" class="w-36 h-24 object-cover rounded-2xl mb-2" />
+          <p class="text-white font-bold">WARFRAME</p>
+          <p class="text-white font-bold">VEILBREAKER</p>
+        </div>
+        <div class="category-item bg-blue-500 rounded-2xl p-4 flex flex-col items-center shadow-lg">
+          <img src="images/images/categories-04.jpg" alt="Tower Fantasy" class="w-36 h-24 object-cover rounded-2xl mb-2" />
+          <p class="text-white font-bold">Tower Fantasy</p>
+        </div>
+        <div class="category-item bg-blue-500 rounded-2xl p-4 flex flex-col items-center shadow-lg">
+          <img src="images/images/categories-05.jpg" alt="Super People" class="w-36 h-24 object-cover rounded-2xl mb-2" />
+          <p class="text-white font-bold">SUPER PEOPLE</p>
+        </div>
+        <div class="category-item bg-blue-500 rounded-2xl p-4 flex flex-col items-center shadow-lg">
+          <img src="images/images/categories-03.jpg" alt="Warframe" class="w-36 h-24 object-cover rounded-2xl mb-2" />
+          <p class="text-white font-bold">WARFRAME</p>
+        </div>
+      </div>
     </div>
-</footer>
+  </section>
+
+  <!-- Last Section: Shop & Newsletter -->
+  <section class="lastsection py-12 bg-gray-50">
+    <div class="product-sections container mx-auto px-6 flex flex-col md:flex-row gap-6">
+      <!-- Shop Section -->
+      <div class="product-section bg-gray-200 rounded-xl shadow p-6 flex-1">
+        <div class="section-content space-y-4">
+          <h3 class="text-red-500 font-bold text-lg">OUR SHOP</h3>
+          <h2 class="text-2xl font-semibold text-gray-800">Go Pre-Order Buy &amp; Get Best Prices For You!</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">SHOP NOW</button>
+        </div>
+      </div>
+      <!-- Product Image Section -->
+      <div class="product-section image-section flex-1">
+        <img src="images/images/top-game-02.jpg" alt="Product Image" class="rounded-xl shadow-lg w-full object-cover" />
+      </div>
+      <!-- Newsletter Section -->
+      <div class="product-section bg-gray-200 rounded-xl shadow p-6 flex-1">
+        <div class="section-content space-y-4">
+          <h3 class="text-red-500 font-bold text-lg">NEWSLETTER</h3>
+          <h2 class="text-2xl font-semibold text-gray-800">Get Up To $100 Off Just Buy Subscribe Newsletter!</h2>
+          <div class="flex flex-col gap-4">
+            <input
+              type="email"
+              placeholder="Your Email..."
+              class="p-3 border border-gray-300 rounded"
+            />
+            <button class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">
+              SUBSCRIBE NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 relative">
+    <div class="footer-content container mx-auto px-6 relative">
+      <img src="images/images/footer-bg.jpg" alt="Blue Section" class="absolute inset-0 w-full h-52 object-cover rounded-lg" />
+      <p class="relative text-white text-center py-4">
+        &copy; Copyright 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
