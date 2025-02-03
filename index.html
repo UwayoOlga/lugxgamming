@@ -6,9 +6,9 @@
   <title>LUGX Gaming Clone</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 p-2">
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-transparent transition-all duration-300">
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-transparent transition-all duration-300 ">
     <div class="logo">
       <img src="images/images/logo.png" alt="LUGX Logo" class="w-32" />
     </div>
@@ -20,7 +20,7 @@
         <li><a href="#" class="px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Product Details</a></li>
         <li><a href="#" class= "px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Contact Us</a></li>
         <li>
-          <a href="#" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Sign In</a>
+          <a href="#" class="bg-red-500 text-white px-4 py-2 rounded round-radius">Sign In</a>
         </li>
       </ul>
     </nav>
@@ -32,8 +32,9 @@
     style="background-image: url('images/images/banner-bg.jpg');"
   >
     <div class="hero-content max-w-xl text-white space-y-6">
-      <h1 class="text-4xl md:text-5xl font-bold">Welcome to LUGX</h1>
-      <h2 class="text-2xl md:text-3xl text-red-400 font-semibold">Best Gaming Site Ever!</h2>
+      <h1 class="text-2xl md:text-2xl font-bold">WELCOME TO LUGX</h1>
+      <h2 class="text-4xl md:text-5xl text-400 font-bold">Best Gaming Site<br> Ever!</h2>
+      <img src="images/images/caption-dec.png" alt="Red Line" class="inline-block h-3 w-auto mt-2 ">
       <p class="text-lg md:text-xl">
         LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
       </p>
@@ -289,18 +290,6 @@
     </div>
   </footer>
 
-  <script>
-    const navbar = document.getElementById('myNavbar');
-  
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 0) {
-        navbar.classList.remove('bg-transparent');
-        navbar.classList.add('bg-blue-500'); // Or your desired color
-      } else {
-        navbar.classList.remove('bg-blue-500');
-        navbar.classList.add('bg-transparent');
-      }
-    });
-  </script>
+  <script src="src/script.js"></script>
 </body>
 </html>
