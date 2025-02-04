@@ -20,7 +20,7 @@
         <li><a href="#" class="px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Product Details</a></li>
         <li><a href="#" class= "px-4 py-2 rounded-lg bg-transparent hover:bg-red-500/20 transition-colors duration-300 text-white font-medium">Contact Us</a></li>
         <li>
-          <a href="#" class="bg-red-400 text-white px-4 py-2 rounded round-radius">Sign In</a>
+          <a href="#" class="bg-red-400 text-white px-4 py-2 rounded-full">Sign In</a>
         </li>
       </ul>
     </nav>
@@ -83,11 +83,13 @@
 </div>
 
   <!-- Trending Games Section -->
-  <section id="trending-games" class="py-12">
+  <section id="trending-games" class="py-12 pt-24 md:pt-32 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between bg-cover bg-center h-[400px] rounded-b-[20%]">
     <div class="container mx-auto px-6">
       <div class="flex items-center justify-between mb-6">
-        <h3 class="text-3xl font-bold">Trending Games</h3>
-        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">VIEW ALL</button>
+        <div class="mb-4"> <span class="text-rose-500 font-bold uppercase tracking-wide text-sm">Trending</span>
+          <h2 class="text-4xl font-bold text-gray-900">Trending Games</h2>
+        </div>
+        <button class="bg-red-400 text-white px-4 py-2 rounded-full hover:bg-blue-500">VIEW ALL</button>
       </div>
       <div class="game-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <!-- Game Card -->
@@ -98,7 +100,9 @@
             <h4 class="font-bold text-lg">Assassin Creed</h4>
             <div class="flex items-center justify-between mt-2">
               <span class="font-bold text-xl">$20</span>
-              <button class="bg-red-500 text-white px-3 py-1 rounded-full hover:bg-red-600">+</button>
+              <div class="relative w-8 h-8 bg-red-500 rounded-full p-1">  <img src="images/images/shopping-bag-fill (1).svg" alt="Your Icon" class=" left-2 top-2">
+                <div class="pl-10"></div>
+              </div>
             </div>
           </div>
         </div>
